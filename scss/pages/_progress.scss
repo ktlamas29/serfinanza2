@@ -1,0 +1,343 @@
+
+.clsProgressGeneral{
+    .container.sect-int{
+        padding: 0 10px;
+    }
+    .content-section-bar{
+        margin-bottom: 45px;
+        padding: 0 40px;
+        .desc-progress{
+            p{
+                margin: 25px 0;  
+                @include media(xs){
+                    margin: 10px 0;
+                    font-size: 14px;
+                }        
+                span{
+                    font-family: $noto_b;
+                    display: block;
+                }
+            }
+        }
+        .cont-progress-gen{
+            padding: 25px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 0px 15px -4px rgba(216,216,235,1);
+-moz-box-shadow: 0px 0px 15px -4px rgba(216,216,235,1);
+box-shadow: 0px 0px 15px -4px rgba(216,216,235,1);
+      .resume{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p{
+              margin: 0;
+              width: 65%;
+              @include media(xs){
+                  font-size: 14px;
+              }
+          }
+          span{
+              font-family: $noto_b;
+              @include media(xs){
+                font-size: 14px;
+            }
+          }
+      }
+      .bar{
+          padding: 40px 0 10px 0;
+          position: relative;
+          span{
+              color:$purple;
+              font-family: $noto_b;
+              position: absolute;
+              top: 10px;
+              font-size: 20px;
+              left: calc(25% - 15px);
+              @include media(xs){
+                  font-size: 16px;
+              }
+
+          }
+          .progress{
+              background-color: #E5F0FF;
+              height: 40px;
+              border-radius: 25px;
+              .progress-bar{
+                  background-color: $purple;
+                  width: 25%;
+              }
+          }
+      }
+      .update{
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        padding: 6px 0;
+    }
+
+        }
+    }
+   
+    
+}
+
+.clsDiscountPr{
+    padding: 60px 0 0 0;
+    @include media(xs){
+        padding: 0;
+    }
+    .title-section{
+        width: 74%;
+        @include media(xs){
+            width: 90%;
+        }
+    }
+    .cont-btn{
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    
+
+}
+
+.grid-discounts{   
+    padding: 35px 0;
+    display: flex;
+    @include media(xs){
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.item{
+    &.award{
+        &.download{
+            width: 65% !important;
+        }
+        width: 75%;
+        margin: 15px auto;
+        background-color: #EFF4FF;
+        border-radius: 10px;
+        overflow: hidden;
+        .content-image{
+            height: 157px;
+            overflow: hidden;
+        }
+        @include media(xs){
+            width: 100%;
+        }
+        .date{
+            font-size: 11px;
+            text-align: center;
+            display: block;
+        }
+        &.modalAwrd{
+            width: 95%;
+            .price{
+                font-size: 28px !important;
+            }
+            .name-award{
+                font-size: 18px;
+            }
+        }
+
+        .price-name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            .logo{
+                width: 27%;
+                margin-right: 8px;
+            }
+            .name{
+                width: 70%;
+                .price{
+                    color:#008ACC ;
+                    font-family: $noto_b;
+                    font-size: 35px;
+                }
+                .name-award{
+                    color:#606060;
+                    font-size: 20px;
+                }
+            }
+        }
+        .btn{
+            width: 70%;
+            margin: 15px auto;
+            display: block;
+        }
+        &.discount{
+            width: 95%;
+            .content-image{
+                overflow: visible;
+                height: inherit;
+            }
+            @include media(xs){
+                width: 95%;
+            }
+        }
+    }
+    background-color: #F4F7FE;
+    margin: 0 10px;
+   
+    .description{
+        padding: 40px 20px 20px;
+    }
+    &.discount{
+        text-align: center;
+        color: #112C46;
+        h3{
+            font-family: $noto_b;
+            color: #000000;
+            font-size: 20px;
+
+        }
+        .purple{
+            font-size: 14px;
+            font-family: $noto_b;
+            color:$purple;
+        }
+        .content-image{
+            position: relative;
+            .logo{
+                position: absolute;
+                bottom: -35px;
+                left: calc(50% - 36px)
+            }
+        }
+        .desc{
+            color: #000000;
+            font-size: 14px;
+            a{
+                display: block;
+                color: #000000;
+                padding: 12px 0;
+                text-decoration: underline;
+            }
+        }
+       
+    }
+    
+    .content-img{
+        position: relative;
+       
+        .main-image{
+            width: 100%;
+            height: 100%;
+        }
+        .logo{
+            position: absolute;
+            bottom: -36px;
+            left: calc(50% - 36px) ;
+        }
+    }
+}
+.clsDiscount{
+    margin: 35px 0;
+    .row{
+        @include media(xs){
+            flex-wrap: nowrap;
+        }
+    }
+    .container{
+        &.sect-int{
+            @include media(xs){
+                padding: 0 !important;
+            }
+            
+        }
+    }
+    .content-discount{
+        height: 140px;
+        background-color: $purple;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        .content-text,.cont-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                width: 70%;
+                @include media(xs){
+                    width: 85%;
+                }
+            }
+        }
+        .cont-btn{
+            justify-content: center;
+            @include media(xs){
+                padding: 0 8px;
+            }
+        }
+        .content-text{
+           
+            padding: 0 15px;
+            font-family: $noto_b;
+            @include media(xs){
+                padding: 0 5px;
+            }
+            .text-white{
+                font-size: 36px;                  
+                line-height: 42px;
+                @include media(xs){
+                    font-size: 21px;
+                    line-height: 18px;
+                    padding: 0 10px;
+                }
+            }
+            .porcent{
+                font-size: 100px;  
+                @include media(xs){
+                    font-size: 34px;
+                }  
+                color: $red-lt;  
+                sub{
+                    color:$white;
+                    font-size: 65px;
+                    padding-bottom: 30px;
+                    @include media(xs){
+                        font-size: 24px;
+                    }
+                }     
+            }
+        }
+        
+        .cont-img{
+            position: relative;
+            @include media(xs){
+                display: none;
+            }
+            img{
+                position: absolute;
+                top: 0px;
+            }
+        }
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.slideDiscount{
+    .item{
+        margin: 0 30px;
+    }
+    .purple{
+        min-height: 40px;
+        display: block;
+    }
+    .desc{
+        min-height: 100px;
+    }
+}
+.cont-purchases{
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 3px solid $purple;
+}

@@ -1,0 +1,39 @@
+.banner-int-tyc {
+
+  .wrap_tyc {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
+
+    .title_tyc {
+      line-height: 46px;
+
+      .condiciones{
+        padding-left: 125px;
+      }
+    }
+  }
+}
+
+.content_tyc{
+    article{
+
+        h3{
+            font-size: $font-20;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 20px;
+            color: $gray-4;
+            
+
+        }
+    }
+}

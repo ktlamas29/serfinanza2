@@ -1,0 +1,53 @@
+.modal-awards{
+    .modal-content{
+        position: relative;
+    }
+    .row{
+        width: 100%;
+        margin: 0;
+        >div{
+            padding: 0;
+        }
+
+    }
+    .modal-dialog{
+        max-width: 620px;
+        border-radius: 5px;
+        .btns-modal{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            a{
+                width: 45%;
+                &.back-white{
+                    background-color: $white;
+                    border: 1px solid $red-lt;
+                    color:$red-lt;
+                }
+
+            }
+        }
+        .modal-body{
+            .close{
+                color: $purple;
+                font-size: 18px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                opacity: 1;
+            }
+            padding: 0;
+            h4{
+                color:$purple;
+                font-size: 18px;
+                font-family: $noto_b;
+            }
+            .cont-card{
+                padding: 25px;
+
+            }
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+@import 'partials/var-mixins',
+'fonts/fonts',
+'partials/general';
+
+
+//Pages
+@import 'pages/login',
+        'pages/tyc',
+        'pages/awwards',
+        'pages/404',
+        'pages/alianzas',
+        'pages/redentions',
+        'pages/mecanica',
+        'pages/progress',
+        'pages/main-award',
+        'pages/finalizo',
+        'pages/faqs';
+
+//Forms
+@import 'forms/form';
+
+//Components
+@import 'components/footer',
+        'components/header',
+        'components/nav-mobile',
+        'components/banner-int',
+        'components/modal-awards',
+        'components/modalMechanic',
+        'components/progress-circle';

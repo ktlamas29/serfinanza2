@@ -1,0 +1,49 @@
+.clsSteps{
+    .stepsContent{
+        margin-bottom: 60px;
+        @include media(xs){
+            margin: 20px 0;
+        }
+    }
+    .content-page{
+        background-color: transparent !important;
+        box-shadow: none;
+        @include media(xs){
+            top: -60px !important;
+        }
+        .row{
+            >div{
+                background-color: transparent;
+            }
+        }
+        .step{
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 310px;
+            -webkit-box-shadow: 0px 4px 13px 3px rgba(216,216,235,1);
+            -moz-box-shadow: 0px 4px 13px 3px rgba(216,216,235,1);
+            box-shadow: 0px 4px 13px 3px rgba(216,216,235,1);
+            .content-nume{
+                display: flex;
+                position: relative;
+                justify-content: flex-end;
+               
+                .icon-step{
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                }
+            }
+            .title{
+                color:$purple;
+                font-size: 20px;
+                font-family: $noto_b;
+            }
+            p{
+                font-size: 14px;
+                margin: 15px 0;;
+            }
+        }
+    }
+}

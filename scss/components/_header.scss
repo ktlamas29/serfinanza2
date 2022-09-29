@@ -1,0 +1,113 @@
+
+.mobile-head{
+    display: none;
+}
+
+.int.mobile{
+@include media(xs){
+    display: block;
+    padding: 8px 0;
+    height: 60px;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+    .row{
+        >div{
+           
+        }
+    }
+
+}
+}
+header{
+    &.int.desk{
+        @include media(xs){
+            display: none;
+        }
+    }
+    height: 80px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    .nav-header{
+        display: flex;
+        justify-content: flex-end;
+        
+        ul{
+            width: 65%;
+            justify-content: space-around;
+            li{
+               
+                a{
+                    color: $purple;
+                    font-size: 14px;
+                    &.link-nav_active {
+                        font-family: $noto_b;
+                    }
+                }
+            }
+        }
+    }
+}
+.content-options{
+    position: relative;
+    
+}
+.submenu-menu-desk{
+    position: absolute;
+    width: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 99;
+    background-color: $white;
+    left: -100px;
+    transform: translateY(-60px);
+    transition: 1s transform ease;
+    visibility: hidden;
+    &.active{
+        transform: translateY(30px);
+        visibility: visible;
+    }
+
+    ul{
+        width: 100% !important;
+        li{
+            padding: 8px 0;
+        }
+        a{
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+        }
+    }
+
+}
+.nav-responsive{
+   
+}
+
+.cont-notification-redemptions{
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    >div{
+        padding: 30px 0;
+        text-align: center;
+        h2{
+            font-size: 22px;
+            font-family: $noto_b;
+            margin: 20px 0;
+        }
+    }
+}

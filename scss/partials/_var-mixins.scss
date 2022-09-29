@@ -1,0 +1,142 @@
+
+@use "sass:math";
+
+// =================== Variables ===================
+//**********Colors**********//
+
+$purple: #15127F;
+$red-lt:#E84859;
+$black : #000000;
+$blue-progress: #E5F0FF;
+$blue-lt: #008ACC;
+$black-menu: #002D43;
+
+// Serfinanza 2 colores
+$blue: #130483; 
+$red-2: #FF3E53;
+$gray-1:#505050;
+$gray-2:#6D6E70;
+$gray-3:#999999;
+$gray-4:#606060;
+$gray-5:#15127F12;
+$white: #ffffff;
+$white-2: #EEEEF6;
+$white-3:#00000029;
+$pink:#E5337F4D;
+$orange:#DF6D38;
+
+
+
+
+//paths
+$pathBg: '../assets/background/';
+$pathGeneral: '../assets/general/';
+$pathMainAward: '../assets/premio-mayor/';
+$pathMecanica: '../assets/como-ganar/';
+$pathIco: '../assets/icons/';
+
+// Fonts
+
+$noto_r : 'noto_regular';
+$noto_b : 'noto_bold';
+$noto_i: 'noto_italic';
+$noto_ib : 'noto_italic_bold';
+$noto_black : 'noto_black';
+$noto_black_italic : 'noto_black_italic';
+
+
+
+
+//Coment
+
+// =================== Mixins ===================
+@mixin seudoElm ($cont: "", $pos:absolute) {
+    content: $cont;
+    position: $pos;
+}
+
+//Media Querys
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+@mixin media($media) {
+    @if $media==xs {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $media==sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $media==md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+    @else if $media==lg {
+        @media (min-width: $breakpoint-lg) {
+            @content;
+        }
+    }
+}
+
+// Función que convierte pixeles en rem
+@function rem($pixels, $context: $baseFontSize) {
+    @if (unitless($pixels)) {
+      $pixels: $pixels * 1px;
+    }
+  
+    @if (unitless($context)) {
+      $context: $context * 1px;
+    }
+  
+    @return math.div($pixels , $context) * 1rem;
+  }
+  
+  //base font size
+  $baseFontSize: 16px;
+  
+  // font sizes
+  $font-10: rem(10);
+  $font-12: rem(12);
+  $font-13: rem(13);
+  $font-14: rem(14);
+  $font-16: rem(16);
+  $font-17: rem(17);
+  $font-18: rem(18);
+  $font-20: rem(20);
+  $font-21: rem(21);
+  $font-22: rem(22);
+  $font-24: rem(24);
+  $font-25: rem(25);
+  $font-26: rem(26);
+  $font-27: rem(27);
+  $font-28: rem(28);
+  $font-30: rem(30);
+  $font-31: rem(31);
+  $font-32: rem(32);
+  $font-34: rem(34);
+  $font-35: rem(35);
+  $font-36: rem(36);
+  $font-38: rem(38);
+  $font-39: rem(39);
+  $font-40: rem(40);
+  $font-44: rem(44);
+  $font-48: rem(48);
+  $font-49: rem(49);
+  $font-50: rem(50);
+  $font-55: rem(55);
+  $font-56: rem(56);
+  $font-60: rem(60);
+  $font-61: rem(61);
+  $font-62: rem(62);
+  $font-64: rem(64);
+  $font-65: rem(65);
+  $font-70: rem(70);
+  $font-80: rem(80);
+  $font-87: rem(87);
+  $font-90: rem(90);
+  $font-100: rem(100);

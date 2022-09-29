@@ -1,0 +1,56 @@
+.banner-int-general{
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-image: url($pathBg + 'bg-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    @include media(xs){
+        background-position: left bottom;
+        display: none;
+        .person-banner{
+            width: 90%;
+            left: calc(50% - 130px);
+        }
+    }
+    .title-banner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color:$white;
+        position: relative;
+        &.tyc{
+            @include media(xs){
+                display: none;
+            }
+        }
+        h3{
+            font-size: 60px;
+            font-family: $noto_b;
+            text-align: left;
+            @include media(xs){
+                position: absolute;
+                font-size: 30px;
+                bottom: 60px;
+                left: 30px;
+                width: 75%;
+            }
+        }
+        h6{
+            font-family: $noto_b;
+            font-size: 24px;
+        }
+        p{
+            font-size: 14px;
+            width: 80%;
+        }
+    }
+}
+.banner-mobile{
+    display: none;
+    @include media(xs){
+        display: block;
+    }
+}

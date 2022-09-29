@@ -1,0 +1,93 @@
+.modal-end-campaign{
+    display: flex;
+    transition:  background-color 3s linear ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    @keyframes modal-end {
+        from{
+            top: -800px;
+        }
+        to{
+            top: 0;
+        }
+    }
+
+    .backdrop{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9294117647);
+    }
+    .wap-modal{
+        background-color: $white;
+        box-shadow: 3px 18px 25px #D8D8EB72;
+        border-radius: 10px;
+        position: relative;
+        animation: modal-end 1s ease-in-out ;
+        overflow: hidden;
+        .img-modal{
+            text-align: left;
+            position: relative;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+            .btn-close-modal{
+                position: absolute;
+                top: 32px;
+                right: 17px;
+                border: none;
+                outline: none;
+                background: none;
+                background-image: url($pathIco +'icon-close-mobile-X.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 16px;
+                height: 16px;
+            }
+
+        }
+        article{
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 23px;
+            .title-modal{
+                h3{
+                    color: $red-2;
+                    font-family: $noto_b;
+                    font-size: $font-32;
+                    text-align: center;
+
+                }
+            }
+            .description-modal{
+                text-align: center;
+                p{
+                    color: #112C46;
+                }
+            }
+            .btn-close-modal{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                border: none;
+                outline: none;
+                background: none;
+                background-image: url($pathIco +'icon-close-X.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    
+}

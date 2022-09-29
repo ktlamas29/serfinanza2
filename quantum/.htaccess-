@@ -1,0 +1,5 @@
+Order deny, allow
+Deny from All
+Require ip 181.129.44.26
+Require ip 181.57.146.242
+Require ip 201.233.8.9

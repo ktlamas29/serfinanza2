@@ -1,0 +1,17 @@
+/vendor/
+/logs/
+/node_modules
+/virtualcods
+/awardtemp
+/tmp
+/mpdf
+.htaccess
+.env
+/quantum/redimir-test.php
+/quantum/libraries
+/voucher_leal
+.sass-cache/
+sonar-project.properties
+.scannerwork/
+.vscode
+composer.lock

@@ -1,0 +1,33 @@
+{
+  "name": "Bancopacifico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yuranh@bitbucket.org/cheftechadmin/bogota-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/cheftechadmin/bogota-2#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "crypto-js": "^4.1.1",
+    "fingerprintjs2": "^2.1.4",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

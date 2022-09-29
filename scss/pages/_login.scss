@@ -1,0 +1,30 @@
+.main-content-login{
+    section.main-content{
+        
+
+        .icon-titular{
+            // background: yellowgreen;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+        }
+
+        .text-login{
+            padding-left: 15px;
+            .ahora{
+                line-height: 15px;
+            }
+            .todos{
+                line-height: 94px;
+            }
+            .limites{
+                line-height: 52px;
+            }
+            .comprando{
+                margin-top: 10px;
+            }
+        }
+    }
+}

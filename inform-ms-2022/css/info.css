@@ -1,0 +1,36 @@
+.content-title-info {
+    display: flex;
+    padding: 25px 15px;
+    align-items: center;
+}
+
+.content-title-info img {
+    width: 50px;
+}
+
+.content-title-info h3 {
+    font-size: 22px;
+    padding-left: 25px;
+    margin: 0;
+}
+
+.tabs-report {
+    padding: 25px 15px;
+}
+
+.content-buttons-dashboard {
+    width: 50%;
+    display: flex;
+}
+
+.content-buttons-dashboard a {
+    width: 200px;
+    padding: 8px;
+    text-align: center;
+    background-color: #141414;
+    font-weight: 700;
+    color: #fff;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 15px;
+}

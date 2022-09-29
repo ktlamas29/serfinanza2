@@ -1,0 +1,128 @@
+.banner-int-faq {
+  .wrap_faq {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+
+    .title_faq {
+      line-height: 56px;
+
+      .frecuentes {
+        padding-left: 153px;
+      }
+    }
+  }
+}
+
+.accordion {
+  width: 100%;
+  background: #fff;
+  margin: 0 15px;
+  padding: 15px;
+  .accordion-content {
+    margin: 10px 0;
+    background: #ffffff;
+    overflow: hidden;
+    padding: 30px 50px;
+    box-shadow: 3px 18px 20px #dededed9;
+    border: 2px solid #eeeef6;
+    border-radius: 5px;
+
+    &.open {
+      padding-bottom: 30px;
+      .description {
+        height: auto;
+      }
+    }
+    header {
+      display: flex;
+      min-height: 50px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s linear;
+
+      .title {
+        font-size: $font-20;
+        font-weight: bold;
+        color: $blue;
+      }
+
+      i {
+        &.fa-minus {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: -40px;
+            top: 0;
+            transform: translate(0);
+            background-image: url("../../assets/icon/icon_up.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: showIconPlus 0.3s ease-in-out;
+          }
+        }
+        &.fa-plus {
+          position: relative;
+          width: 30px;
+          height: 30px;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            right: -40px;
+            top: 0;
+            background-image: url("../../assets/icon/icon_down.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: showIconMinus 0.3s ease-in-out;
+          }
+        }
+      }
+      @keyframes showIconPlus {
+        from {
+          opacity: 0;
+          visibility: hidden;
+        }
+        to {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      @keyframes showIconMinus {
+        from {
+          opacity: 0;
+          visibility: hidden;
+        }
+        to {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .description {
+      height: 0;
+      overflow: hidden;
+      font-size: $font-16;
+      color: $gray-4;
+      font-weight: normal;
+      transition: height 3s linear;
+      text-align: justify;
+
+      
+    }
+  }
+}

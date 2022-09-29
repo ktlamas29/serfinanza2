@@ -1,0 +1,30 @@
+.not-found-cont-main{
+    .cont-not-found{
+        color:$white;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        .number{
+          font-weight: 900;
+          font-size: 120px;
+        }
+        p{
+          width: 68%;
+          margin: 0 auto 20px auto;
+        }
+        a{
+          background-color: $purple !important;
+          width: 60%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .content-logo-int{
+          height: 90px;
+          margin-bottom: 0 !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+}
