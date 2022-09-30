@@ -72,7 +72,7 @@ p {
 }
 
 span-red {
-  color: #FF3E53;
+  color: #ff3e53;
 }
 
 .font-14 {
@@ -86,6 +86,11 @@ span-red {
 }
 .font-49 {
   font-size: 3.0625rem;
+}
+@media (max-width: 992px) {
+  .font-40-mb {
+    font-size: 2.5rem;
+  }
 }
 .font-50 {
   font-size: 3.125rem;
@@ -101,6 +106,25 @@ span-red {
 }
 .font-87 {
   font-size: 5.4375rem;
+}
+
+.fontsfm-noto_r {
+  font-family: "noto_regular";
+}
+.fontsfm-noto_b {
+  font-family: "noto_bold";
+}
+.fontsfm-noto_i {
+  font-family: "noto_italic";
+}
+.fontsfm-noto_ib {
+  font-family: "noto_italic_bold";
+}
+.fontsfm-noto_black {
+  font-family: "noto_black";
+}
+.fontsfm-noto_black_italic {
+  font-family: "noto_black_italic";
 }
 
 a:hover {
@@ -262,7 +286,7 @@ h3 {
 }
 
 .color-red {
-  color: #FF3E53;
+  color: #ff3e53;
 }
 .color-blue {
   color: #130483;
@@ -277,13 +301,13 @@ h3 {
   color: #606060;
 }
 .color-gray-5 {
-  color: #15127F12;
+  color: #15127f12;
 }
 .color-orange {
-  color: #DF6D38;
+  color: #df6d38;
 }
 .color-pink {
-  color: #E5337F4D;
+  color: #e5337f4d;
 }
 
 .invalid-feedback {
@@ -309,31 +333,50 @@ h3 {
   left: 8px;
 }
 
-.btn {
-  background-color: #E84859;
+.btn-main {
+  background: #130483;
+  width: 146px;
+  height: 53px;
+  padding: 15px 40px;
   color: #ffffff;
-  font-size: 14px;
+  border-radius: 5px;
 }
-@media (max-width: 767px) {
-  .btn.desk {
-    display: none;
-  }
-}
-.btn.mobile {
-  display: none;
-}
-@media (max-width: 767px) {
-  .btn.mobile {
-    display: block;
-    width: 60%;
-    margin: 10px auto;
-  }
-}
-.btn.general {
-  background-color: #E84859;
-}
-.btn.general:hover, .btn.general:focus {
+.btn-main:hover {
+  background-color: #3020a9;
   color: #ffffff;
+}
+.btn-disabled {
+  background: #999999;
+  padding: 15px 0px;
+  color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+}
+.btn-disabled::after {
+  content: url("../../assets/icon/Seguridad.svg");
+  position: absolute;
+  right: 10px;
+}
+.btn-disabled:hover {
+  background-color: #999999;
+  color: #ffffff;
+}
+.btn-cancelar {
+  background: #ffffff;
+  width: 146px;
+  height: 53px;
+  padding: 15px 0px;
+  color: #130483;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 3px solid #130483;
+}
+.btn-cancelar:hover {
+  background-color: #EEEEF6;
+  color: #130483;
 }
 
 .show-message {
@@ -369,7 +412,8 @@ h3 {
   font-size: 5rem;
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev::before,
+.slick-next::before {
   display: none;
 }
 
@@ -422,6 +466,16 @@ h3 {
   right: 0;
 }
 
+.main-content-login section.main-content {
+  background-image: url("../../assets/background/elemento-fondo1.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+@media (max-width: 992px) {
+  .main-content-login section.main-content {
+    background-image: none;
+  }
+}
 .main-content-login section.main-content .icon-titular {
   height: 100%;
   display: flex;
@@ -433,15 +487,28 @@ h3 {
 }
 .main-content-login section.main-content .text-login .ahora {
   line-height: 15px;
+  font-family: "noto_black";
 }
 .main-content-login section.main-content .text-login .todos {
   line-height: 94px;
+  font-family: "noto_black";
 }
 .main-content-login section.main-content .text-login .limites {
   line-height: 52px;
+  font-family: "noto_black";
 }
 .main-content-login section.main-content .text-login .comprando {
   margin-top: 10px;
+  font-family: "noto_black";
+}
+
+.content-col-form {
+  border: 2px solid #130483;
+  padding: 30px 40px;
+}
+.content-col-form .content-form .input-user {
+  border: 2px solid #130483;
+  color: #999999;
 }
 
 .banner-int-tyc .wrap_tyc {
@@ -1128,6 +1195,16 @@ h3 {
   left: 30px;
   top: 41%;
   transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+}
+@media (max-width: 992px) {
+  .footer_main .superintendencia {
+    top: 66%;
+    left: 5px;
+  }
 }
 
 .mobile-head {

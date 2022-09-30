@@ -9,7 +9,7 @@
                                 <img src="assets/logos/Logos.svg" alt="">
                             </div>
                         </div>
-                        <div class="col-md-9 mt-5 mt-md-0">
+                        <div class="col-lg-9 mt-5 mt-lg-0">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
@@ -26,7 +26,7 @@
                                                 <div class="col-lg-3">
                                                     <a href="" class="font-14">Términos y condiciones</a>
                                                 </div>
-                                                <div class="col-md-4">
+                                                <div class="col-lg-4">
                                                     <a href="" class="font-14">Preguntas frecuentes</a>
                                                 </div>
                                             </div>
@@ -61,7 +61,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 mb-5">
                 <div>
                     <p class="color-blue text-center">
                         <strong>*Este es un sitio oficial de Banco Serfinanza con fines promocionales.</strong>

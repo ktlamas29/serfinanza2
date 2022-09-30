@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="info" transform="translate(-221 -699)">
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(221 699)" fill="#fff" stroke="#f73354" stroke-width="2">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+    </g>
+    <text id="i" transform="translate(236 717)" fill="#f73354" font-size="14" font-family="NotoSans-Black, Noto Sans" font-weight="800" letter-spacing="-0.01em"><tspan x="-4" y="0">i</tspan></text>
+  </g>
+</svg>

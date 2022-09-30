@@ -10,10 +10,8 @@ body {
   font-family: $noto_r;
   color: $black;
   font-weight: normal;
- 
- 
 }
-body{
+body {
   position: relative;
   background-color: $white;
 }
@@ -21,7 +19,6 @@ body{
 html.noChange {
   overflow: hidden;
 }
-
 
 section {
   position: relative;
@@ -32,52 +29,73 @@ img {
   max-width: 100%;
 }
 
-p{
+p {
   color: $blue;
   font-size: $font-16;
   margin-bottom: 0px;
 }
 
-span{
-  &-red{
-    color: #FF3E53;
+span {
+  &-red {
+    color: #ff3e53;
   }
 }
 
-
-.font{
-  &-14{
+.font {
+  &-14 {
     font-size: $font-14;
   }
-  &-16{
+  &-16 {
     font-size: $font-16;
   }
-  &-20{
+  &-20 {
     font-size: $font-20;
   }
-  &-49{
+  &-49 {
     font-size: $font-49;
   }
-  &-50{
+  &-40-mb {
+    @media (max-width: 992px) {
+      font-size: $font-40;
+    }
+  }
+  &-50 {
     font-size: $font-50;
   }
-  &-56{
+  &-56 {
     font-size: $font-56;
   }
-  &-60{
+  &-60 {
     font-size: $font-60;
   }
-  &-62{
+  &-62 {
     font-size: $font-62;
   }
-  &-87{
+  &-87 {
     font-size: $font-87;
   }
 }
 
-
-
-
+.fontsfm {
+  &-noto_r {
+    font-family: $noto_r;
+  }
+  &-noto_b {
+    font-family: $noto_b;
+  }
+  &-noto_i {
+    font-family: $noto_i;
+  }
+  &-noto_ib {
+    font-family: $noto_ib;
+  }
+  &-noto_black {
+    font-family: $noto_black;
+  }
+  &-noto_black_italic {
+    font-family: $noto_black_italic;
+  }
+}
 
 a {
   &:hover {
@@ -97,45 +115,41 @@ ol {
 }
 
 // Titles
-h3{
+h3 {
   color: $blue;
-
 }
 
-.title-section{
+.title-section {
   display: flex;
   align-items: center;
   color: $purple;
   font-size: 40px;
   font-family: $noto_b;
   margin: 20px 0;
-  @include media(xs){
+  @include media(xs) {
     font-size: 26px;
     margin: 10px 0;
-   
-    img{
-      
+
+    img {
     }
   }
-  .round{
-      width: 70px;
-      margin-right: 6px;
-      height: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $red-lt;
-      border-radius: 50px;
-      @include media(xs){
-       
-        height: 50px;
-        img{
-          width: 50%;
-        }
+  .round {
+    width: 70px;
+    margin-right: 6px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $red-lt;
+    border-radius: 50px;
+    @include media(xs) {
+      height: 50px;
+      img {
+        width: 50%;
       }
+    }
   }
 }
-
 
 // ================ Class ================
 .container--xs {
@@ -158,33 +172,33 @@ h3{
     left: 33.3333%;
   }
 }
-.container{
-  &.sect-int{
+.container {
+  &.sect-int {
     padding: 0 50px;
   }
-} 
-.content-logo-int{
+}
+.content-logo-int {
   margin-bottom: 80px;
   text-align: center;
 }
-.content-page{
+.content-page {
   position: relative;
   top: -60px;
   background-color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
--moz-box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
-box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
-@include media(xs){
-  width: 92%;
-  top: -25px;
-}
-&.tyc-faq{
-  padding: 40px 120px;
-  @include media(xs){
-    padding: 25px;
+  -webkit-box-shadow: -1px -9px 36px -27px rgba(216, 216, 235, 1);
+  -moz-box-shadow: -1px -9px 36px -27px rgba(216, 216, 235, 1);
+  box-shadow: -1px -9px 36px -27px rgba(216, 216, 235, 1);
+  @include media(xs) {
+    width: 92%;
+    top: -25px;
   }
-}
+  &.tyc-faq {
+    padding: 40px 120px;
+    @include media(xs) {
+      padding: 25px;
+    }
+  }
 }
 
 //Border Radius
@@ -203,10 +217,13 @@ box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
   }
 }
 
-
 //Margin & Padding
-.no-padding { padding: 0; }
-.no-margin  { margin: 0 !important; }
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0 !important;
+}
 
 .mg-btm-20 {
   margin-bottom: 20px;
@@ -226,10 +243,7 @@ box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
 
 //Backgrounds
 
-
 //Buttons
-
-
 
 .align {
   &-center {
@@ -251,164 +265,194 @@ box-shadow: -1px -9px 36px -27px rgba(216,216,235,1);
 
 //Colors
 .color {
-  &-red{
-    color: #FF3E53;
+  &-red {
+    color: #ff3e53;
   }
-  &-blue{
+  &-blue {
     color: #130483;
   }
-  &-gray-1{
+  &-gray-1 {
     color: #505050;
   }
-  &-gray-3{
+  &-gray-3 {
     color: #999999;
   }
-  &-gray-4{
+  &-gray-4 {
     color: #606060;
   }
-  &-gray-5{
-    color: #15127F12;
+  &-gray-5 {
+    color: #15127f12;
   }
-  &-orange{
-    color: #DF6D38;
+  &-orange {
+    color: #df6d38;
   }
-  &-pink{
-    color: #E5337F4D;
+  &-pink {
+    color: #e5337f4d;
   }
-
-
- 
-
 }
 
-.invalid-feedback{
+.invalid-feedback {
   font-size: 11px;
-  
+
   height: 0px;
   overflow: hidden;
   visibility: hidden;
   transition: 0.5s ease;
   margin: 0;
   display: none;
-  &.active{
+  &.active {
     visibility: visible !important;
     height: 32px;
     display: block;
   }
 }
-.vigilado{
+.vigilado {
   position: absolute;
-  &.login{
+  &.login {
     bottom: 30px;
     left: 8px;
   }
 }
-.btn{
-  background-color: $red-lt;
-  color: $white;
-  font-size: 14px;
-  &.desk{
-    @include media(xs){
-      display: none;
+.btn {
+  &-main {
+    background: $blue;
+    width: 146px;
+    height: 53px;
+    padding: 15px 40px;
+    color: $white;
+    border-radius: 5px;
+    &:hover {
+      background-color: #3020a9;
+      color: $white;
     }
   }
-  &.mobile{
-    display: none;
-    @include media(xs){
-      display: block;
-      width: 60%;
-      margin: 10px auto;
+  &-disabled {
+    background: $gray-3;
+    padding: 15px 0px;
+    color: $white;
+    border-radius: 5px;
+    position: relative;
+
+    &::after {
+      content: url("../../assets/icon/Seguridad.svg");
+      position: absolute;
+      right: 10px;
+    }
+
+    &:hover {
+      background-color: $gray-3;
+      color: $white;
     }
   }
 
-  &.general{
-    background-color: $red-lt;
-    &:hover,&:focus{
-      color:$white;
-    }
-    
+  &-cancelar {
+    background: $white;
+    width: 146px;
+    height: 53px;
+    padding: 15px 0px;
+    color: $blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 3px solid $blue;
 
+    &:hover {
+      background-color: $white-2;
+      color: $blue;
+    }
   }
 }
 
-.show-message{
-   display: block;
+.show-message {
+  display: block;
 }
 //Fonts
 
-.shadow{
-  -webkit-box-shadow: 0px 1px 16px -5px rgba(226,235,239,1);
--moz-box-shadow: 0px 1px 16px -5px rgba(226,235,239,1);
-box-shadow: 0px 1px 16px -5px rgba(226,235,239,1);
+.shadow {
+  -webkit-box-shadow: 0px 1px 16px -5px rgba(226, 235, 239, 1);
+  -moz-box-shadow: 0px 1px 16px -5px rgba(226, 235, 239, 1);
+  box-shadow: 0px 1px 16px -5px rgba(226, 235, 239, 1);
 }
 
-
-
 .full {
-  &-height { height: 100%; }
+  &-height {
+    height: 100%;
+  }
 }
 
 //sizes
 .size {
-  &-10 { font-size: $font-10; }
-  &-14 { font-size: $font-14; }
-  &-16 { font-size: $font-16; }
-  &-22 { font-size: $font-22; }
-  &-30 { font-size: $font-30; }
-  &-80 { font-size: $font-80; }
+  &-10 {
+    font-size: $font-10;
+  }
+  &-14 {
+    font-size: $font-14;
+  }
+  &-16 {
+    font-size: $font-16;
+  }
+  &-22 {
+    font-size: $font-22;
+  }
+  &-30 {
+    font-size: $font-30;
+  }
+  &-80 {
+    font-size: $font-80;
+  }
 }
-.slick-prev::before, .slick-next::before{
+.slick-prev::before,
+.slick-next::before {
   display: none;
 }
 
 //Messagees
-.slick-dots{
-  li{
-    button{
-      &::before{
+.slick-dots {
+  li {
+    button {
+      &::before {
         display: none;
       }
-        width: 10px;
-        height: 10px;
-        background-color: $red-lt;
-        border-radius: 50px;
-        z-index: 9;
-        opacity: .2;
-       
+      width: 10px;
+      height: 10px;
+      background-color: $red-lt;
+      border-radius: 50px;
+      z-index: 9;
+      opacity: 0.2;
     }
-    &.slick-active{
-      button{
+    &.slick-active {
+      button {
         opacity: 1;
       }
-      
     }
-   
   }
 }
-.slick-arrow{
+.slick-arrow {
   width: 90px;
   z-index: 9;
   top: 40%;
-  @include media(xs){
+  @include media(xs) {
     width: 50px;
   }
-  img{
+  img {
     width: 90px;
   }
 }
 
-.content-page{
+.content-page {
   padding: 35px 0;
-  &.grid{
+  &.grid {
     padding: 35px 90px;
-    @include media(xs){
+    @include media(xs) {
       padding: 20px;
     }
   }
 }
-#show-submenu-mobile{
+#show-submenu-mobile {
   position: relative;
-  img{
+  img {
     position: absolute;
     right: 0;
   }

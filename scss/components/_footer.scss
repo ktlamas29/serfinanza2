@@ -1,13 +1,19 @@
-.footer_main{
-    position: relative;
-    
+.footer_main {
+  position: relative;
 
-    .superintendencia{
-        position: absolute;
-        left:30px;
-        top: 41%;
-        transform: translate(50%, -50%);
-        
-        
+  .superintendencia {
+    position: absolute;
+    left: 30px;
+    top: 41%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+
+    @media (max-width: 992px) {
+      top: 66%;
+      left: 5px;
     }
+  }
 }

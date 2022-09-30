@@ -150,14 +150,15 @@ if (!isset($_SESSION['code-validate-attempts'])) {
                                                         </h4>
                                                     </div>
                                                 </div>
-                                                <div class="btn-item">
+                                                <div class="">
                                                     <?php
                                                     if ($is_winner) { ?>
-                                                        <a href="#" id="<?php echo $award['id']; ?>" data-id="<?php echo $award['id']; ?>" data-description="<?php echo $award['description']; ?>" data-valor="$<?php echo $label_award_price; ?>" data-name="<?php echo $award['name']; ?>" data-logo="<?php echo $award['logo_image']; ?>" data-image="<?php echo $award['image']; ?>" data-toggle="modal" data-target="#contentAward" class="btn btn-main open-modal-confirm">
+                                                        <a href="#" id="<?php echo $award['id']; ?>" data-id="<?php echo $award['id']; ?>" data-description="<?php echo $award['description']; ?>" data-valor="$<?php echo $label_award_price; ?>" data-name="<?php echo $award['name']; ?>" data-logo="<?php echo $award['logo_image']; ?>" data-image="<?php echo $award['image']; ?>" data-toggle="modal" data-target="#contentAward" class="btn-main open-modal-confirm">
                                                             Redime tu premio
                                                         </a>
                                                     <?php } else { ?>
-                                                        <a href="#" class="btn btn-form btn-main disabled">Redimir</a>
+                                                        <a href="#" class="btn btn-form btn-disabled">Redime tu premio</a>
+                                                        <a href="#" class="btn btn-form btn-cancelar">Redime tu premio</a>
                                                     <?php }
                                                     ?>
                                                 </div>
