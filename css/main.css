@@ -84,6 +84,21 @@ span-red {
 .font-20 {
   font-size: 1.25rem;
 }
+.font-24 {
+  font-size: 1.5rem;
+}
+.font-30 {
+  font-size: 1.875rem;
+}
+.font-32 {
+  font-size: 2rem;
+}
+.font-40 {
+  font-size: 2.5rem;
+}
+.font-46 {
+  font-size: 2.875rem;
+}
 .font-49 {
   font-size: 3.0625rem;
 }
@@ -98,11 +113,17 @@ span-red {
 .font-56 {
   font-size: 3.5rem;
 }
+.font-55 {
+  font-size: 3.4375rem;
+}
 .font-60 {
   font-size: 3.75rem;
 }
 .font-62 {
   font-size: 3.875rem;
+}
+.font-70 {
+  font-size: 4.375rem;
 }
 .font-87 {
   font-size: 5.4375rem;
