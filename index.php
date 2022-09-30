@@ -41,7 +41,7 @@ $login_error = isset($_GET['login_error']) ? true : false;
     <header class="int mobile mobile-head">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-lg-12">
                     <div class="logo-login">
                         <img src="/assets/logos/logo-login.png" alt="">
                     </div>
@@ -53,7 +53,7 @@ $login_error = isset($_GET['login_error']) ? true : false;
         <section class="main-content bg-tpl-init login-int">
             <div class="container">
                 <div class="row ">
-                    <div class="col-12 col-md-7 ">
+                    <div class="col-12 col-lg-6 ">
                         <div>
                             <img src="assets/banners/imagen-principal.png" alt="">
                         </div>
@@ -67,12 +67,20 @@ $login_error = isset($_GET['login_error']) ? true : false;
 
                                 <div class="col-9">
                                     <div class="text-login">
-                                        <p class="color-blue font-49 ahora"><strong>Ahora rompe</strong></p>
+                                        <p class="">
+                                            <div class="row">
+                                                <div class="col-6"><strong class="color-blue font-49 font-40-r ahora">Ahora</strong></div>
+                                                <div class="col-6">
+                                                    <strong class="color-blue font-49 font-49-r ahora"> rompe</strong>
+
+                                                </div>
+                                            </div>
+                                        </p>
                                         <p class="font-56 todos"><strong>todos <span class="mt-5 color-red font-62">los</span></strong> </p>
                                         <p class="font-87 limites"><strong>límites</strong></p>
 
                                         <p class="font-20 comprando">
-                                            <strong>comprando con tu <span class="color-red">Tarjeta Olímpica <br> Mastercard</span> donde quieras.</strong>
+                                            <strong>comprando con tu <span class="color-red">Tarjeta <br class="d-lg-block d-none"> Olímpica Mastercard</span> donde quieras.</strong>
                                         </p>
                                     </div>
                                 </div>
@@ -84,27 +92,33 @@ $login_error = isset($_GET['login_error']) ? true : false;
                     </div>
 
                     <!-- Col formulario -->
-                    <div class="col-12 col-md-5">
-                        <div>
-                            <h3 class="font-20">
+                    <div class="col-12 col-lg-5 d-center mt-5 ">
+                        <div class="mt-5">
+                            <br>
+                            <h3 class="font-20  fontsfm-noto_black">
                                 <strong>Puedes usarla para el mercado, ¡y también para Netflix!</strong>
                             </h3>
                             <p class="font-16">
                                 Úsala para todo lo que te gusta, atrévete a romper todos los límites y gana bonos de regalo de tus comercios favoritos.
                             </p>
+                            <br>
                         </div>
 
                         <div class="content-col-form ">
                             <div>
-                
+
                                 <div class="content-form">
                                     <form id="form_login" class="form-login" action="/progreso" method="POST" autocomplete="off">
                                         <div class="first-form">
                                             <div class="form-group">
-                                                <label class="" for="">Ingresa con tu código
+                                                <label class="color-blue font-16 " for="">
+                                                    <strong class="fontsfm-noto_black">
+                                                        Ingresa con tu código
+                                                    </strong>
                                                 </label>
+                                                <img class="mx-2" src="assets/icon/info.svg" alt="">
                                                 <div class="cont-inp">
-                                                    <input type="text" class="form-control input-user" maxlength="12" name="user_s" required id="" placeholder="Escribe tu código">
+                                                    <input type="text" class="form-control input-user" maxlength="12" name="user_s" required id="" placeholder="Digita tu código aquí">
                                                 </div>
 
                                                 <div class="invalid-feedback">
@@ -115,10 +129,10 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                         <div class="form-group accept-tyc d-flex">
                                             <div class="invalid-feedback">
                                             </div>
-                                            <input type="checkbox" name="tyc" class="styled-checkbox" id="tyc" value="s">
-                                            <label class="bulletTyc" for="tyc"></label>
-                                            <p class="">
-                                                He leído y acepto los <a class="font-bold" href="/terminos-condiciones">Términos y condiciones</a>
+                                            <input type="checkbox" name="tyc" class="styled-checkbox m-1" id="tyc" value="s">
+                                            <label class="bulletTyc " for="tyc"></label>
+                                            <p class=" color-gray-1 font-14 ">
+                                                He leído y acepto los <a class="font-bold color-blue" href="/terminos-condiciones"><strong>términos y condiciones</strong></a>
                                             </p>
 
 
@@ -133,8 +147,8 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                             }
                                             ?>
                                         </div>
-                                        <div class="actions-block">
-                                            <a href="#" class="send-form-login btn general">Ingresar</a>
+                                        <div class="actions-block mt-4">
+                                            <a href="#" class="send-form-login btn-main">Ingresar</a>
                                         </div>
                                         <input type="hidden" value="" name="g-recaptcha-response" id="g-recaptcha-response">
                                         <input type="hidden" value="" name="user_name">
@@ -144,10 +158,10 @@ $login_error = isset($_GET['login_error']) ? true : false;
 
                                 </div>
 
-                                <div class="links login">
+                                <!-- <div class="links login">
                                     <a href="/tyc.php">Términos y condiciones</a>
                                     <a href="/preguntas-frecuentes">Preguntas Frecuentes</a>
-                                </div>
+                                </div> -->
                             </div>
 
 
