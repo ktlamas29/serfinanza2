@@ -42,14 +42,27 @@ span {
 }
 
 .font {
+  &-10 {
+    font-size: $font-10;
+  }
+  &-12 {
+    font-size: $font-12;
+  }
+
   &-14 {
     font-size: $font-14;
   }
+
   &-16 {
     font-size: $font-16;
   }
   &-20 {
     font-size: $font-20;
+    &-mb{
+      @media (max-width: 1200px) {
+        font-size: $font-18;
+      }
+    }
   }
   &-24 {
     font-size: $font-24;
@@ -68,17 +81,30 @@ span {
   }
   &-49 {
     font-size: $font-49;
-  }
-  &-40-mb {
-    @media (max-width: 992px) {
-      font-size: $font-40;
+    &-mb {
+      @media (max-width: 1200px) {
+        font-size: $font-40;
+      }
+      @media (max-width: 576px) {
+        font-size: $font-35;
+      }
     }
   }
   &-50 {
     font-size: $font-50;
   }
+  &-50-mb {
+    @media (max-width: 1200px) {
+      font-size: $font-50;
+    }
+  }
   &-56 {
     font-size: $font-56;
+    &-mb {
+      @media (max-width: 1200px) {
+        font-size: $font-46;
+      }
+    }
   }
   &-55 {
     font-size: $font-55;
@@ -88,12 +114,22 @@ span {
   }
   &-62 {
     font-size: $font-62;
+    &-mb {
+      @media (max-width: 1200px) {
+        font-size: $font-50;
+      }
+    }
   }
   &-70 {
     font-size: $font-70;
   }
   &-87 {
     font-size: $font-87;
+    &-mb{
+      @media (max-width: 1200px) {
+        font-size: $font-70;
+      }
+    }
   }
 }
 
@@ -119,9 +155,8 @@ span {
 }
 
 a {
-  &:hover {
-    text-decoration: none;
-  }
+  color: $blue;
+  text-decoration: underline $blue;
 }
 
 * {
@@ -309,6 +344,9 @@ h3 {
   }
   &-pink {
     color: #e5337f4d;
+  }
+  &-yellow {
+    color: #f9b600;
   }
 }
 

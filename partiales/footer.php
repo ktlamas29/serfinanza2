@@ -35,12 +35,12 @@
                                     <div class="col-12">
                                         <div>
                                             <div class="row">
-                                                <div class="col-lg-3">
+                                                <div class="col-lg-2">
                                                     <p class="font-14">
                                                         <strong>Contacto:</strong>
                                                     </p>
                                                 </div>
-                                                <div class="col-lg-5">
+                                                <div class="col-lg-10">
                                                     <p class="font-14">
                                                         Desde tu celular: <a href="tel:+323 599 7000">323 599 7000</a>
                                                     </p>

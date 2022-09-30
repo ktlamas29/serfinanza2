@@ -59,27 +59,24 @@ $login_error = isset($_GET['login_error']) ? true : false;
                         </div>
                         <div class="containe-fluid">
                             <div class="row">
-                                <div class="col-3 pr-0">
+                                <div class="col-2 col-lg-3 pr-0">
                                     <div class="icon-titular text-right ">
                                         <img src="assets/icon/iconos-titular.svg" alt="">
                                     </div>
                                 </div>
 
-                                <div class="col-9">
+                                <div class="col-10 col-lg-9">
                                     <div class="text-login">
                                         <p class="">
-                                            <div class="row">
-                                                <div class="col-6"><strong class="color-blue font-49 font-40-r ahora">Ahora</strong></div>
-                                                <div class="col-6">
-                                                    <strong class="color-blue font-49 font-49-r ahora"> rompe</strong>
-
-                                                </div>
-                                            </div>
+      
+                                            <strong class="color-blue font-49 font-49-mb ahora">Ahora rompe</strong>
+                                            
+                                  
                                         </p>
-                                        <p class="font-56 todos"><strong>todos <span class="mt-5 color-red font-62">los</span></strong> </p>
-                                        <p class="font-87 limites"><strong>límites</strong></p>
+                                        <p class="font-56 font-56-mb todos"><strong>todos <span class="mt-5 color-red font-62 font-62-mb">los</span></strong> </p>
+                                        <p class="font-87 font-87-mb limites"><strong>límites</strong></p>
 
-                                        <p class="font-20 comprando">
+                                        <p class="font-20 font-20-mb comprando">
                                             <strong>comprando con tu <span class="color-red">Tarjeta <br class="d-lg-block d-none"> Olímpica Mastercard</span> donde quieras.</strong>
                                         </p>
                                     </div>
@@ -116,7 +113,11 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                                         Ingresa con tu código
                                                     </strong>
                                                 </label>
-                                                <img class="mx-2" src="assets/icon/info.svg" alt="">
+                                                <label for="" class="lbl-recuerde font-14">
+                                                    <span id="spn_bl" class="font-14 spn-lbl"><strong class="font-14 color-yellow ">Recuerda:</strong> Serfinanza ha enviado  a tu correo registrado en el sistema el código de ingreso.</span>
+                                                    <button id="btn_cerrar" class="btn-cerrar"><img src="assets/icon/X.svg" alt=""></button>
+                                                </label>
+                                                <img id="img_inf" class="mx-2 img_inf" src="assets/icon/info.svg" alt="">
                                                 <div class="cont-inp">
                                                     <input type="text" class="form-control input-user" maxlength="12" name="user_s" required id="" placeholder="Digita tu código aquí">
                                                 </div>
@@ -157,13 +158,7 @@ $login_error = isset($_GET['login_error']) ? true : false;
                                     </form>
 
                                 </div>
-
-                                <!-- <div class="links login">
-                                    <a href="/tyc.php">Términos y condiciones</a>
-                                    <a href="/preguntas-frecuentes">Preguntas Frecuentes</a>
-                                </div> -->
                             </div>
-
 
                         </div>
 

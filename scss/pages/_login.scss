@@ -9,7 +9,6 @@
     }
 
     .icon-titular {
-      // background: yellowgreen;
       height: 100%;
       display: flex;
       justify-content: flex-end;
@@ -19,15 +18,15 @@
     .text-login {
       padding-left: 15px;
       .ahora {
-        line-height: 15px;
+        line-height: 10px;
         font-family: $noto_black;
       }
       .todos {
-        line-height: 94px;
+        line-height: 40px;
         font-family: $noto_black;
       }
       .limites {
-        line-height: 52px;
+        line-height: 90px;
         font-family: $noto_black;
       }
       .comprando {
@@ -46,6 +45,83 @@
     .input-user {
       border: 2px solid $blue;
       color: $gray-3;
+    }
+
+    .lbl-recuerde {
+      position: relative;
+
+      .spn-lbl {
+        position: absolute;
+        background: $blue 0% 0% no-repeat padding-box;
+        width: 292px;
+        height: 89px;
+        box-shadow: 3px 5px 8px $white-3;
+        border-radius: 10px;
+        color: $white;
+        padding: 14px 19px;
+        padding-right: 30px;
+        top: -115px;
+        right: -168px;
+        visibility: hidden;
+        opacity: 0;
+        @media (max-width: 450px) {
+          right: -76px;
+        }
+
+        &.show {
+          visibility: visible;
+          opacity: 1;
+          animation: show-info 0.3s ease-in-out;
+          -webkit-animation: show-info 0.3s ease-in-out;
+          @keyframes show-info {
+            from {
+              visibility: hidden;
+              opacity: 0;
+            }
+            to {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background: $blue;
+          right: 130px;
+          bottom: -6px;
+          width: 30px;
+          height: 30px;
+          z-index: -1;
+          transform: rotate(40deg);
+          -webkit-transform: rotate(40deg);
+          -moz-transform: rotate(40deg);
+          -ms-transform: rotate(40deg);
+          -o-transform: rotate(40deg);
+        }
+      }
+
+      .btn-cerrar {
+        position: absolute;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0px;
+        top: -102px;
+        right: -155px;
+
+        @media (max-width: 450px) {
+          right: -65px;
+        }
+        @media (max-width: 350px) {
+          right: -192px;
+        }
+      }
+    }
+
+    .img_inf {
+      cursor: pointer;
     }
   }
 }

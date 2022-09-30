@@ -79,7 +79,7 @@ $(document).ready(function () {
     if (inputUser.val().length < 8) {
       validateAlerts(
         inputUser,
-        'El código no es válido o presenta algún error. Por favor verifica que esté correcto.',
+        'El código es incorrecto, intenta de nuevo.',
       )
       return false
     }
@@ -124,4 +124,21 @@ $(document).ready(function () {
       $('.modal-end-campaign').css('display', 'none')
     }, 500)
   })
+})
+
+
+
+// Info code login 
+const spn_bl = document.querySelector("#spn_bl");
+const btn_cerrar =document.querySelector("#btn_cerrar");
+const img_inf =document.querySelector("#img_inf");
+
+
+
+img_inf.addEventListener('click', function (e) {
+  spn_bl.classList.toggle("show");
+})
+
+btn_cerrar.addEventListener('click', () => {
+  spn_bl.classList.toggle("show");
 })
